@@ -7,7 +7,7 @@ Example app for shortcuts in design library v25
 ![Demo 1](https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut2.gif)
 
 ### Manifest
-Add meta-data before </activity> tag in Manifest.xml
+Add meta-data before ```</activity>``` tag in Manifest.xml
 ```
 <meta-data android:name="android.app.shortcuts"
     android:resource="@xml/shortcuts" />
