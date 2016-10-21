@@ -3,7 +3,7 @@
 Example app for shortcuts in design library v25
 
 ### Demo
-![Demo 1](https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut1.gif)![Demo 1](https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut2.gif)
+![Demo 1](https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut1.gif) ![Demo 1](https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut2.gif)
 
 ### Manifest
 Add meta-data before ```</activity>``` tag in Manifest.xml
