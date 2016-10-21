@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shortcuts</string>
+
+    <string name="shortcut1">Shortcut 1</string>
+    <string name="shortcut1_long">Long shortcut 1</string>
+    <string name="shortcut1_disabled">Disabled shortcut 1</string>
+
+    <string name="shortcut2">Shortcut 2</string>
+    <string name="shortcut2_long">Long shortcut 2</string>
+    <string name="shortcut2_disabled">Disabled shortcut 2</string>
+
+    <string name="shortcut3">Shortcut 3</string>
+    <string name="shortcut3_long">Long shortcut 3</string>
+    <string name="shortcut3_disabled">Disabled shortcut 3</string>
+</resources>

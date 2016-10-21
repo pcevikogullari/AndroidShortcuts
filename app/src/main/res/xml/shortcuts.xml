@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="shortcut1"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_run_black_24dp"
+        android:shortcutShortLabel="@string/shortcut1"
+        android:shortcutLongLabel="@string/shortcut1_long"
+        android:shortcutDisabledMessage="@string/shortcut1_disabled">
+        <intent
+            android:action="action1"
+            android:targetPackage="com.pamir.shortcuts"
+            android:targetClass="com.pamir.shortcuts.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut2"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_bike_black_24dp"
+        android:shortcutShortLabel="@string/shortcut2"
+        android:shortcutLongLabel="@string/shortcut2_long"
+        android:shortcutDisabledMessage="@string/shortcut2_disabled">
+        <intent
+            android:action="action2"
+            android:targetPackage="com.pamir.shortcuts"
+            android:targetClass="com.pamir.shortcuts.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut3"
+        android:enabled="true"
+        android:icon="@drawable/ic_rowing_black_24dp"
+        android:shortcutShortLabel="@string/shortcut3"
+        android:shortcutLongLabel="@string/shortcut3_long"
+        android:shortcutDisabledMessage="@string/shortcut3_disabled">
+        <intent
+            android:action="action3"
+            android:targetPackage="com.pamir.shortcuts"
+            android:targetClass="com.pamir.shortcuts.MainActivity" />
+    </shortcut>
+
+</shortcuts>
