@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Androids Shortcuts by pcevikogullari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Androids Shortcuts</h1>
+      <h2 class="project-tagline">Example app for shortcuts in Android 7</h2>
+      <a href="https://github.com/pcevikogullari/AndroidShortcuts" class="btn">View on GitHub</a>
+      <a href="https://github.com/pcevikogullari/AndroidShortcuts/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pcevikogullari/AndroidShortcuts/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="android-shortcuts" class="anchor" href="#android-shortcuts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android Shortcuts</h1>
+
+<p>Example app for shortcuts in design library v25</p>
+
+<h3>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h3>
+
+<p><img src="https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut1.gif" alt="Demo 1"> <img src="https://raw.githubusercontent.com/pcevikogullari/AndroidShortcuts/master/shortcut2.gif" alt="Demo 1"></p>
+
+<h3>
+<a id="manifest" class="anchor" href="#manifest" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manifest</h3>
+
+<p>Add meta-data before <code>&lt;/activity&gt;</code> tag in Manifest.xml</p>
+
+<pre><code>&lt;meta-data android:name="android.app.shortcuts"
+    android:resource="@xml/shortcuts" /&gt;
+</code></pre>
+
+<h3>
+<a id="add-shortcut" class="anchor" href="#add-shortcut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add Shortcut</h3>
+
+<p>To add or edit a new shotcut, go to /res/xml/shortcuts.xml :</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&lt;</span>shortcuts xmlns:android=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res/android<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>shortcut
+        android:shortcutId=<span class="pl-s"><span class="pl-pds">"</span>shortcut1<span class="pl-pds">"</span></span>
+        android:enabled=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        android:icon=<span class="pl-s"><span class="pl-pds">"</span>@drawable/ic_directions_run_black_24dp<span class="pl-pds">"</span></span>
+        android:shortcutShortLabel=<span class="pl-s"><span class="pl-pds">"</span>@string/shortcut1<span class="pl-pds">"</span></span>
+        android:shortcutLongLabel=<span class="pl-s"><span class="pl-pds">"</span>@string/shortcut1_long<span class="pl-pds">"</span></span>
+        android:shortcutDisabledMessage=<span class="pl-s"><span class="pl-pds">"</span>@string/shortcut1_disabled<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>intent
+            android:action=<span class="pl-s"><span class="pl-pds">"</span>custom_action<span class="pl-pds">"</span></span>
+            android:targetPackage=<span class="pl-s"><span class="pl-pds">"</span>com.pamir.shortcuts<span class="pl-pds">"</span></span>
+            android:targetClass=<span class="pl-s"><span class="pl-pds">"</span>com.pamir.shortcuts.MainActivity<span class="pl-pds">"</span></span> /<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>/shortcut<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>/shortcuts<span class="pl-k">&gt;</span></pre></div>
+
+<h3>
+<a id="handle-actions" class="anchor" href="#handle-actions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Handle Actions</h3>
+
+<p>To handle shortcuts, just add new constant:</p>
+
+<pre><code>private final static String CUSTOM_ACTION = "custom_action";
+</code></pre>
+
+<p>and check the intent for custom action :</p>
+
+<pre><code>switch (getIntent().getAction()){
+            case CUSTOM_ACTION:
+                textView.setText(CUSTOM_ACTION);
+                break;
+            default:
+                break;
+        }
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pcevikogullari/AndroidShortcuts">Androids Shortcuts</a> is maintained by <a href="https://github.com/pcevikogullari">pcevikogullari</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
