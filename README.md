@@ -41,11 +41,11 @@ private final static String CUSTOM_ACTION = "custom_action";
 and check the intent for custom action :
 ```
 switch (getIntent().getAction()){
-            case CUSTOM_ACTION:
-                textView.setText(CUSTOM_ACTION);
-                break;
-            default:
-                break;
-        }
+    case CUSTOM_ACTION:
+        textView.setText(CUSTOM_ACTION);
+        break;
+    default:
+        break;
+}
 ```
 
